@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-
+//Classe triangulo
 //variável com o cálculo da área do triângulo
 double calcularAreaTriangulo (double a, double b, double c){
     double p = (a + b + c) / 2;
