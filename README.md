@@ -1,4 +1,4 @@
-# Titulo ou Arte do Projeto
+# Programa Cálculo do triângulo com função
 ## Versão: 1.0 
 ## Status do Projeto: ✔️ Concluído ⚠️ Espera ❌ Cancelado
 
