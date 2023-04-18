@@ -1,4 +1,4 @@
-# Titulo ou Arte do Projeto
+# Classe Triângulo
 ## Versão: 1.0 
 ## Status do Projeto: ✔️ Concluído ⚠️ Espera ❌ Cancelado
 
