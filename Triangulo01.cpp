@@ -1,40 +1,60 @@
 #include <iostream>
-#include <math.h>
-using namespace std;
-//Classe triangulo
-//variável com o cálculo da área do triângulo
-double calcularAreaTriangulo (double a, double b, double c){
-    double p = (a + b + c) / 2;
-    return sqrt(p * ( p - a) * (p - b) * (p - c));
-}
+#include <cmath>
 
-int main() {
-    double xa, xb, xc, ya, yb, yc;
-    
-    //interface para o usuário imputar os valores do triângulo X
-    cout << "Digite as medidas dos lados do triângulo X (separados por espaço): ";
-    cin >> xa >> xb >> xc;
-    
-    //interface para o usuário imputar os valores do triângulo Y
-    cout << "Digite as medidas dos lados do triângulo Y (separados por espaço): ";
-    cin >> ya >> yb >> yc;
-
-    //imput de cada triangulo para o cálculo
-    double areaX = calcularAreaTriangulo (xa, xb, xc);
-    double areaY = calcularAreaTriangulo (ya, yb, yc);
-     
-    //interface do usuário com o resultado da área de cada triângulo
-    cout << "Área do triângulo X: " << areaX << endl;
-    cout << "Área do triângulo Y: " << areaY << endl;
-
-    //interface do usuário com o resultado comparativo
-    if (areaX > areaY) {
-        cout << "O triângulo X tem a maior área." << endl;
-    } else if (areaY > areaX) {
-        cout << "O triângulo Y tem a maior área." << endl;
-    } else {
-        cout << "Os triângulos tem a mesma área." << endl;
+//
+class Triangulo {
+    private:
+    double a, b, c;
+    public:
+    Triangulo(double lado1, double lado2, double lado3) {
+        a = lado1;
+        b = lado2;
+        c = lado3;
     }
     
+    //
+    double calculaArea() {
+        double p = (a + b +c) / 2.0;
+        double area = std::sqrt(p * (p - a) * (p - b) * (p - c));
+        return area;
+        }
+        //
+        double getlado1() { return a; }
+        double getlado2() { return b; }
+        double getlado3() { return c; }
+};
+
+int main() {
+    double a, b, c;
+    
+    //
+    std::cout << "Digite as medidas dos lados do Triângulo X: ";
+    std::cin >> a >> b >> c;
+    Triangulo X(a, b , c);
+    
+    //
+    std::cout << "Digite as medidas dos lados do Triângulo Y: ";
+    std::cin >> a >> b >> c;
+    Triangulo Y(a, b, c);
+    
+    //
+    double areaX = X.calculaArea();
+    double areaY = Y.calculaArea();
+    
+    //
+    std::cout << "Área do Triângulo X: " << areaX << std::endl;
+    std::cout << "Área do Triângulo Y: " << areaY << std::endl;
+    
+    //
+    if (areaX > areaY){
+        std::cout << "Triângulo X tem a maior área." << std::endl;
+    }
+    else if (areaY > areaX){
+        std::cout << "Triângulo Y tem a maior área." << std::endl;
+    }
+    else {
+        std::cout << "Ambos  os triângulos tem a mesma área." << std::endl;
+    }
+
     return 0;
 }
