@@ -4,8 +4,10 @@
 
 ## Tópicos
 🔹 Descrição do projeto 
+Projeto para o cálculo da área de dois triangulos e comparativo entre eles.
 
 🔹 Funcionalidades
+if, else if e else
 
 🔹 Distribuição
 
@@ -14,10 +16,12 @@
 🔹 Como rodar a aplicação
 
 🔹 Testes realizados
+Realizado no Programiz
 
 🔹 Banco de Dados
 
 🔹 Linguagens, dependências e libs utilizadas
+C++
 
 🔹 Novas Recursos
 
@@ -26,6 +30,7 @@
 🔹 Recursos inseridos 
 
 🔹 Desenvolvedores/Contribuintes
+Guilherme
 
 🔹 Informações Extras
 
@@ -35,7 +40,7 @@
 Insira os tópicos do README em links para facilitar a navegação do leitor
 
 ## Descrição do projeto
-Descrição breve do projeto compondo um paragrafo ou dois.
+Cálculo da área de dois triangulos (X e Y) com os valores dos lados imputados pelo usuário. Ao final ele compara a área de ambos e determina qual o maior ou se ambos tem a mesma área.
 
 ## Funcionalidades ⚙️
 ✔️ Funcionalidade 1
